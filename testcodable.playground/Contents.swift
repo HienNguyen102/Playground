@@ -49,48 +49,403 @@ formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
 let JSON = """
 {
-    "Code": 1,
     "Data": {
-        "User": {
-            "UserID": "1683262616522",
-            "DisplayName": "huyen101",
-            "Name": "Tr%C3%BAc%20Lan",
-            "Status": 1,
-            "Phone": "09324234432",
-            "Email": "huyen101@gmail.com",
-            "Phone": "09324234432",
-            "StartDate": "20230505",
-            "ExpireDate": "20280531",
-            "ActingUserID": "1658985363690",
-            "ActingUserName": "Lan%20Hu%E1%BB%B3nh",
-            "Info": {},
-            "Profiles": [
-                {
-                    "Space": "mbs",
-                    "Type": "1",
-                    "Profile": {
-                        "DeptID": "1",
-                        "BranchID": "2",
-                        "Title": "abc",
-                        "OrderLimit": "0",
-                        "OrderLimitTotal": "0"
-                    },
-                    "Role": [
-                        {
-                            "RoleID": "22",
-                            "Status": "1",
-                            "ActingUserID": "1658985363690",
-                            "Timestamp": "2023-03-02 10:58:42.573"
-                        }
-                    ]
-                }
-            ],
-            "CreationDate": "2023-05-05 13:11:35.239982",
-            "LastUpdateDate": "2023-05-22 16:45:45.180298",
-            "LastUpdateUserID": "1658985363690",
-            "LastUpdateUserName": "admin"
-        }
-    }
+        "Accounts": [
+            {
+                "UserID": "9001005",
+                "DisplayName": "999C001005",
+                "Name": "account%20name%209001005",
+                "AccountID": "999C001005",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001007",
+                "DisplayName": "999C001007",
+                "Name": "account name 9001007",
+                "AccountID": "999C001007",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001009",
+                "DisplayName": "999C001009",
+                "Name": "account name 9001009",
+                "AccountID": "999C001009",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001008",
+                "DisplayName": "999C001008",
+                "Name": "account name 9001008",
+                "AccountID": "999C001008",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001002",
+                "DisplayName": "999C001002",
+                "Name": "account name 9001002",
+                "AccountID": "999C001002",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001001",
+                "DisplayName": "999C001001",
+                "Name": "account name 9001001",
+                "AccountID": "999C001001",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001010",
+                "DisplayName": "999C001010",
+                "Name": "account name 9001010",
+                "AccountID": "999C001010",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001012",
+                "DisplayName": "999C001012",
+                "Name": "account name 9001012",
+                "AccountID": "999C001012",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001013",
+                "DisplayName": "999C001013",
+                "Name": "account name 9001013",
+                "AccountID": "999C001013",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001014",
+                "DisplayName": "999C001014",
+                "Name": "account name 9001014",
+                "AccountID": "999C001014",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001015",
+                "DisplayName": "999C001015",
+                "Name": "account name 9001015",
+                "AccountID": "999C001015",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001016",
+                "DisplayName": "999C001016",
+                "Name": "account name 9001016",
+                "AccountID": "999C001016",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001017",
+                "DisplayName": "999C001017",
+                "Name": "account name 9001017",
+                "AccountID": "999C001017",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9000003",
+                "DisplayName": "999C000003",
+                "Name": "account name 9000003",
+                "AccountID": "999C000003",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001018",
+                "DisplayName": "999C001018",
+                "Name": "account name 9001018",
+                "AccountID": "999C001018",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9000054",
+                "DisplayName": "999C000054",
+                "Name": "account name 9000054",
+                "AccountID": "999C000054",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001030",
+                "DisplayName": "999C001030",
+                "Name": "account name 9001030",
+                "AccountID": "999C001030",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001031",
+                "DisplayName": "999C001031",
+                "Name": "account name 9001031",
+                "AccountID": "999C001031",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001032",
+                "DisplayName": "999C001032",
+                "Name": "account name 9001032",
+                "AccountID": "999C001032",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001033",
+                "DisplayName": "999C001033",
+                "Name": "account name 9001033",
+                "AccountID": "999C001033",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001034",
+                "DisplayName": "999C001034",
+                "Name": "account name 9001034",
+                "AccountID": "999C001034",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001035",
+                "DisplayName": "999C001035",
+                "Name": "account name 9001035",
+                "AccountID": "999C001035",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001036",
+                "DisplayName": "999C001036",
+                "Name": "account name 9001036",
+                "AccountID": "999C001036",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001037",
+                "DisplayName": "999C001037",
+                "Name": "account name 9001037",
+                "AccountID": "999C001037",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001019",
+                "DisplayName": "999C001019",
+                "Name": "account name 9001019",
+                "AccountID": "999C001019",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9001039",
+                "DisplayName": "999C001039",
+                "Name": "account name 9001039",
+                "AccountID": "999C001039",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "9000051",
+                "DisplayName": "999C000051",
+                "Name": "account name 9000051",
+                "AccountID": "999C000051",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "0990915100",
+                "DisplayName": "915100",
+                "Name": "Mr. Inno Test 100 Inno Test",
+                "AccountID": "915100",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "UserID": "0990915101",
+                "DisplayName": "915101",
+                "Name": "Mr. Inno Test 101 Inno Test",
+                "AccountID": "915101",
+                "SubAccounts": [
+                    "1",
+                    "6"
+                ]
+            },
+            {
+                "UserID": "0990910001",
+                "DisplayName": "910001",
+                "Name": "Ms. Test",
+                "AccountID": "910001",
+                "SubAccounts": [
+                    "1"
+                ]
+            },
+            {
+                "UserID": "0990910002",
+                "DisplayName": "910002",
+                "Name": "Ms. Test",
+                "AccountID": "910002",
+                "SubAccounts": [
+                    "1"
+                ]
+            },
+            {
+                "UserID": "0990910003",
+                "DisplayName": "910003",
+                "Name": "Mr. Test",
+                "AccountID": "910003",
+                "SubAccounts": [
+                    "1"
+                ]
+            },
+            {
+                "UserID": "0990910004",
+                "DisplayName": "910004",
+                "Name": "Ms. Test",
+                "AccountID": "910004",
+                "SubAccounts": [
+                    "1"
+                ]
+            },
+            {
+                "UserID": "0990910006",
+                "DisplayName": "910006",
+                "Name": "Mr. Test",
+                "AccountID": "910006",
+                "SubAccounts": [
+                    "1"
+                ]
+            },
+            {
+                "UserID": "0990910007",
+                "DisplayName": "910007",
+                "Name": "Ms. Test",
+                "AccountID": "910007",
+                "SubAccounts": [
+                    "1"
+                ]
+            },
+            {
+                "UserID": "0990910008",
+                "DisplayName": "910008",
+                "Name": "Mr Test",
+                "AccountID": "910008",
+                "SubAccounts": [
+                    "1"
+                ]
+            },
+            {
+                "UserID": "9001038",
+                "DisplayName": "999C001038",
+                "Name": "account name 9001038",
+                "AccountID": "999C001038",
+                "SubAccounts": [
+                    "1",
+                    "6",
+                    "8"
+                ]
+            }
+        ]
+    },
+    "Code": 1
 }
 """
 
@@ -382,13 +737,76 @@ class UserDataRole: Codable {
 }
 
 
+// MARK: - GetAccountsResponse
+class GetAccountsResponse: BaseResponse {
+    /*var data: GetAccountsData?
+
+    enum CodingKeys: String, CodingKey {
+        case data = "Data"
+    }*/
+    var getAccountsData : GetAccountsData?
+    override var data : BaseData? {
+        get{
+            return getAccountsData
+        }
+        set {
+            if let newAccData = newValue as? GetAccountsData {
+                getAccountsData = newAccData
+            } else {
+                print("incorrect")
+            }
+        }
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case getAccountsData = "Data"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        getAccountsData = try? container.decode(GetAccountsData.self, forKey: .getAccountsData)
+        try super.init(from: decoder)
+    }
+    
+}
+
+// MARK: - DataClass
+class GetAccountsData: BaseData {
+    var accounts: [AccountDTO]?
+
+    enum CodingKeys: String, CodingKey {
+        case accounts = "Accounts"
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        accounts = try? container.decode([AccountDTO].self, forKey: .accounts)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - AccountDTO
+class AccountDTO: Codable {
+    var userID, displayName, name, accountID: String?
+    var subAccounts: [String]?
+
+    enum CodingKeys: String, CodingKey {
+        case userID = "UserID"
+        case displayName = "DisplayName"
+        case name = "Name"
+        case accountID = "AccountID"
+        case subAccounts = "SubAccounts"
+    }
+}
+
+
 
 
 let jsonData = JSON.data(using: .utf8)!
 
-let userRes = try! JSONDecoder().decode(GetUserResponse.self, from: jsonData)
-let userData =  userRes.getUserData
-let user = userData?.user
+let userRes = try! JSONDecoder().decode(GetAccountsResponse.self, from: jsonData)
+let userData =  userRes.getAccountsData
+let user = userData?.accounts
 
 print(formatter.string(from: date))
 
