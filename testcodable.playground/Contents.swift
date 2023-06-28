@@ -49,403 +49,89 @@ formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
 let JSON = """
 {
+    "Code": 1,
     "Data": {
-        "Accounts": [
+        "Parameters": [
             {
-                "UserID": "9001005",
-                "DisplayName": "999C001005",
-                "Name": "account%20name%209001005",
-                "AccountID": "999C001005",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
+                "ID": 1,
+                "Type": "WEB_CONFIGURATION",
+                "Name": "UF_MGL_Limit",
+                "Value": "abcde",
+                "Description": "Hạn mức tối đa để gia hạn hợp đồng ký quỹ online",
+                "Date": 20220825,
+                "IsReadonly": false
             },
             {
-                "UserID": "9001007",
-                "DisplayName": "999C001007",
-                "Name": "account name 9001007",
-                "AccountID": "999C001007",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001009",
-                "DisplayName": "999C001009",
-                "Name": "account name 9001009",
-                "AccountID": "999C001009",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001008",
-                "DisplayName": "999C001008",
-                "Name": "account name 9001008",
-                "AccountID": "999C001008",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001002",
-                "DisplayName": "999C001002",
-                "Name": "account name 9001002",
-                "AccountID": "999C001002",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001001",
-                "DisplayName": "999C001001",
-                "Name": "account name 9001001",
-                "AccountID": "999C001001",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001010",
-                "DisplayName": "999C001010",
-                "Name": "account name 9001010",
-                "AccountID": "999C001010",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001012",
-                "DisplayName": "999C001012",
-                "Name": "account name 9001012",
-                "AccountID": "999C001012",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001013",
-                "DisplayName": "999C001013",
-                "Name": "account name 9001013",
-                "AccountID": "999C001013",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001014",
-                "DisplayName": "999C001014",
-                "Name": "account name 9001014",
-                "AccountID": "999C001014",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001015",
-                "DisplayName": "999C001015",
-                "Name": "account name 9001015",
-                "AccountID": "999C001015",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001016",
-                "DisplayName": "999C001016",
-                "Name": "account name 9001016",
-                "AccountID": "999C001016",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001017",
-                "DisplayName": "999C001017",
-                "Name": "account name 9001017",
-                "AccountID": "999C001017",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9000003",
-                "DisplayName": "999C000003",
-                "Name": "account name 9000003",
-                "AccountID": "999C000003",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001018",
-                "DisplayName": "999C001018",
-                "Name": "account name 9001018",
-                "AccountID": "999C001018",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9000054",
-                "DisplayName": "999C000054",
-                "Name": "account name 9000054",
-                "AccountID": "999C000054",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001030",
-                "DisplayName": "999C001030",
-                "Name": "account name 9001030",
-                "AccountID": "999C001030",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001031",
-                "DisplayName": "999C001031",
-                "Name": "account name 9001031",
-                "AccountID": "999C001031",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001032",
-                "DisplayName": "999C001032",
-                "Name": "account name 9001032",
-                "AccountID": "999C001032",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001033",
-                "DisplayName": "999C001033",
-                "Name": "account name 9001033",
-                "AccountID": "999C001033",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001034",
-                "DisplayName": "999C001034",
-                "Name": "account name 9001034",
-                "AccountID": "999C001034",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001035",
-                "DisplayName": "999C001035",
-                "Name": "account name 9001035",
-                "AccountID": "999C001035",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001036",
-                "DisplayName": "999C001036",
-                "Name": "account name 9001036",
-                "AccountID": "999C001036",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001037",
-                "DisplayName": "999C001037",
-                "Name": "account name 9001037",
-                "AccountID": "999C001037",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001019",
-                "DisplayName": "999C001019",
-                "Name": "account name 9001019",
-                "AccountID": "999C001019",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9001039",
-                "DisplayName": "999C001039",
-                "Name": "account name 9001039",
-                "AccountID": "999C001039",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "9000051",
-                "DisplayName": "999C000051",
-                "Name": "account name 9000051",
-                "AccountID": "999C000051",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "0990915100",
-                "DisplayName": "915100",
-                "Name": "Mr. Inno Test 100 Inno Test",
-                "AccountID": "915100",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
-            },
-            {
-                "UserID": "0990915101",
-                "DisplayName": "915101",
-                "Name": "Mr. Inno Test 101 Inno Test",
-                "AccountID": "915101",
-                "SubAccounts": [
-                    "1",
-                    "6"
-                ]
-            },
-            {
-                "UserID": "0990910001",
-                "DisplayName": "910001",
-                "Name": "Ms. Test",
-                "AccountID": "910001",
-                "SubAccounts": [
-                    "1"
-                ]
-            },
-            {
-                "UserID": "0990910002",
-                "DisplayName": "910002",
-                "Name": "Ms. Test",
-                "AccountID": "910002",
-                "SubAccounts": [
-                    "1"
-                ]
-            },
-            {
-                "UserID": "0990910003",
-                "DisplayName": "910003",
-                "Name": "Mr. Test",
-                "AccountID": "910003",
-                "SubAccounts": [
-                    "1"
-                ]
-            },
-            {
-                "UserID": "0990910004",
-                "DisplayName": "910004",
-                "Name": "Ms. Test",
-                "AccountID": "910004",
-                "SubAccounts": [
-                    "1"
-                ]
-            },
-            {
-                "UserID": "0990910006",
-                "DisplayName": "910006",
-                "Name": "Mr. Test",
-                "AccountID": "910006",
-                "SubAccounts": [
-                    "1"
-                ]
-            },
-            {
-                "UserID": "0990910007",
-                "DisplayName": "910007",
-                "Name": "Ms. Test",
-                "AccountID": "910007",
-                "SubAccounts": [
-                    "1"
-                ]
-            },
-            {
-                "UserID": "0990910008",
-                "DisplayName": "910008",
-                "Name": "Mr Test",
-                "AccountID": "910008",
-                "SubAccounts": [
-                    "1"
-                ]
-            },
-            {
-                "UserID": "9001038",
-                "DisplayName": "999C001038",
-                "Name": "account name 9001038",
-                "AccountID": "999C001038",
-                "SubAccounts": [
-                    "1",
-                    "6",
-                    "8"
-                ]
+                "ID": 2,
+                "Type": "WEB_CONFIGURATION",
+                "Name": "GroupAcountAdmin",
+                "Value": {
+                    "Market": "U",
+                    "Rule": [
+                        {
+                            "StockType": "S",
+                            "Min": "100.000000",
+                            "Max": "0.000000",
+                            "PriceStep": "100.000000",
+                            "MaxVol": "999900",
+                            "AssetCode": "",
+                            "AssetType": "",
+                            "PriceUnit": "1000.000000",
+                            "VolumeUnit": "100",
+                            "TradingType": "1",
+                            "MinVol": "1",
+                            "Multiplier": "0"
+                        },
+                        {
+                            "StockType": "",
+                            "Min": "0.000000",
+                            "Max": "0.000000",
+                            "PriceStep": "1.000000",
+                            "MaxVol": "10000000",
+                            "AssetCode": "",
+                            "AssetType": "",
+                            "PriceUnit": "1.000000",
+                            "VolumeUnit": "100",
+                            "TradingType": "8",
+                            "MinVol": "1",
+                            "Multiplier": "0"
+                        },
+                        {
+                            "StockType": "E",
+                            "Min": "1.000000",
+                            "Max": "0.000000",
+                            "PriceStep": "1.000000",
+                            "MaxVol": "999900",
+                            "AssetCode": "",
+                            "AssetType": "",
+                            "PriceUnit": "1000.000000",
+                            "VolumeUnit": "100",
+                            "TradingType": "1",
+                            "MinVol": "1",
+                            "Multiplier": "0"
+                        },
+                        {
+                            "StockType": "U",
+                            "Min": "100.000000",
+                            "Max": "0.000000",
+                            "PriceStep": "100.000000",
+                            "MaxVol": "999900",
+                            "AssetCode": "",
+                            "AssetType": "",
+                            "PriceUnit": "1000.000000",
+                            "VolumeUnit": "100",
+                            "TradingType": "1",
+                            "MinVol": "1",
+                            "Multiplier": "0"
+                        }
+                    ]
+                },
+                "Description": "Đưa config GroupAcountAdmin BO xuống DB",
+                "Date": 20220825,
+                "IsReadonly": false
             }
         ]
-    },
-    "Code": 1
+    }
 }
 """
 
@@ -739,11 +425,6 @@ class UserDataRole: Codable {
 
 // MARK: - GetAccountsResponse
 class GetAccountsResponse: BaseResponse {
-    /*var data: GetAccountsData?
-
-    enum CodingKeys: String, CodingKey {
-        case data = "Data"
-    }*/
     var getAccountsData : GetAccountsData?
     override var data : BaseData? {
         get{
@@ -802,11 +483,390 @@ class AccountDTO: Codable {
 
 
 
+
+// MARK: - GetTradeableQtyResponse
+class GetTradeableQtyResponse: BaseResponse {
+    
+    var tradeableData: GetTradeableQtyData?
+    
+    override var data: BaseData? {
+        get{
+            return tradeableData
+        }
+        set {
+            if let newTradeable = newValue as? GetTradeableQtyData {
+                tradeableData = newTradeable
+            } else {
+                print("inncorrect")
+            }
+        }
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case tradeableData = "Data"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        tradeableData = try? container.decode(GetTradeableQtyData.self, forKey: .tradeableData)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - GetTradeableQtyData
+class GetTradeableQtyData: BaseData {
+    var subAccs: [TradeableQtySubAcc]?
+
+    enum CodingKeys: String, CodingKey {
+        case subAccs = "SubAccs"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        subAccs = try? container.decode([TradeableQtySubAcc].self, forKey: .subAccs)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - TradeableQtySubAcc
+class TradeableQtySubAcc: Codable {
+    var accID, subAccID, symbol: String?
+    var refPrice: Int?
+    var side, price, controllerID: String?
+    var tradeableQty: [String: Int]?
+    var subAccExtension: [TradeableQtyExtension]?
+
+    enum CodingKeys: String, CodingKey {
+        case accID = "AccID"
+        case subAccID = "SubAccID"
+        case symbol = "Symbol"
+        case refPrice = "RefPrice"
+        case side = "Side"
+        case price = "Price"
+        case controllerID = "ControllerID"
+        case tradeableQty = "TradeableQty"
+        case subAccExtension = "Extension"
+    }
+}
+
+// MARK: - TradeableQty
+class TradeableQtyExtension: Codable {
+    var key: String?
+    var value: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case key = "Key"
+        case value = "Value"
+    }
+}
+
+
+// MARK: - GetDataChartResponse
+class GetDataChartResponse: BaseResponse {
+    
+    var getDataChartData: GetDataChartData?
+    
+    override var data: BaseData? {
+        get {
+            return getDataChartData
+        }
+        set {
+            if let newData = newValue as? GetDataChartData {
+                getDataChartData = newData
+            } else {
+                print("incorrect")
+            }
+        }
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case getDataChartData = "Data"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        getDataChartData = try? container.decode(GetDataChartData.self, forKey: .getDataChartData)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - GetDataChartData
+class GetDataChartData: BaseData {
+    var e: [String]?
+    var t, v, a, o, c, h, l: [Double]?
+    var s: String?
+    
+    enum CodingKeys : String, CodingKey {
+        case e, t, v, a, o, c, h, l, s
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        e = try? container.decode([String].self, forKey: .e)
+        s = try? container.decode(String.self, forKey: .s)
+        t = try? container.decode([Double].self, forKey: .t)
+        v = try? container.decode([Double].self, forKey: .v)
+        a = try? container.decode([Double].self, forKey: .a)
+        o = try? container.decode([Double].self, forKey: .o)
+        c = try? container.decode([Double].self, forKey: .c)
+        h = try? container.decode([Double].self, forKey: .h)
+        l = try? container.decode([Double].self, forKey: .l)
+        try super.init(from: decoder)
+    }
+}
+
+
+
+// MARK: - GetOrderBookResponse
+class GetOrderBookResponse: BaseResponse {
+    var orderBookData: GetOrderBookData?
+
+    override var data: BaseData? {
+        get {
+            return orderBookData
+        }
+        
+        set {
+            if let newOrderData = newValue as? GetOrderBookData {
+                orderBookData = newOrderData
+            } else {
+                print("incorrect")
+            }
+        }
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case orderBookData = "Data"
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        orderBookData = try? container.decode(GetOrderBookData.self, forKey: .orderBookData)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - GetOrderBookData
+class GetOrderBookData: BaseData {
+    var orders: [OrderBookDTO]?
+
+    enum CodingKeys: String, CodingKey {
+        case orders = "Orders"
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        orders = try? container.decode([OrderBookDTO].self, forKey: .orders)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - OrderBookDTO
+class OrderBookDTO: Codable {
+    var msgSeqNum, senderSubID, senderLocationID, startDate: String?
+    var tradeDate, endDate, orderID, clOrdID: String?
+    var refClOrdID, side, symbol, orderQty: String?
+    var price, ordType, timeInForce, ordStatus: String?
+    var handlInst, solicitedFlag, startTransactTime, lastTransactTime: String?
+    var account, allocAccount, exDestination, lastQty: String?
+    var lastPx, cumQty, leavesQty, avgPx: String?
+    var execID, execType: String?
+
+    enum CodingKeys: String, CodingKey {
+        case msgSeqNum = "MsgSeqNum"
+        case senderSubID = "SenderSubID"
+        case senderLocationID = "SenderLocationID"
+        case startDate = "StartDate"
+        case tradeDate = "TradeDate"
+        case endDate = "EndDate"
+        case orderID = "OrderID"
+        case clOrdID = "ClOrdID"
+        case refClOrdID = "RefClOrdID"
+        case side = "Side"
+        case symbol = "Symbol"
+        case orderQty = "OrderQty"
+        case price = "Price"
+        case ordType = "OrdType"
+        case timeInForce = "TimeInForce"
+        case ordStatus = "OrdStatus"
+        case handlInst = "HandlInst"
+        case solicitedFlag = "SolicitedFlag"
+        case startTransactTime = "StartTransactTime"
+        case lastTransactTime = "LastTransactTime"
+        case account = "Account"
+        case allocAccount = "AllocAccount"
+        case exDestination = "ExDestination"
+        case lastQty = "LastQty"
+        case lastPx = "LastPx"
+        case cumQty = "CumQty"
+        case leavesQty = "LeavesQty"
+        case avgPx = "AvgPx"
+        case execID = "ExecID"
+        case execType = "ExecType"
+    }
+}
+
+
+// MARK: - GetGetParametersResponse
+class GetParametersResponse: BaseResponse {
+    var parametersData: GetParametersData?
+
+    enum CodingKeys: String, CodingKey {
+        case parametersData = "Data"
+    }
+    
+    override var data: BaseData? {
+        get {
+            return parametersData
+        }
+        
+        set {
+            if let newPara = newValue as? GetParametersData {
+                parametersData = newPara
+            } else {
+                print("incorrect")
+            }
+        }
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        parametersData = try? container.decode(GetParametersData.self, forKey: .parametersData)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - DataClass
+class GetParametersData: BaseData {
+    var parameters: [GetParameterDTO]?
+
+    enum CodingKeys: String, CodingKey {
+        case parameters = "Parameters"
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        parameters = try? container.decode([GetParameterDTO].self, forKey: .parameters)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - Parameter
+class GetParameterDTO: Codable {
+    var id: Int?
+    var type, name: String?
+    var value: QuantumValue?
+    var description: String?
+    var date: Int?
+    var isReadonly: Bool?
+
+    enum CodingKeys: String, CodingKey {
+        case id = "ID"
+        case type = "Type"
+        case name = "Name"
+        case value = "Value"
+        case description = "Description"
+        case date = "Date"
+        case isReadonly = "IsReadonly"
+    }
+}
+
+enum QuantumValue: Codable {
+    
+    case parameterDto(GetParameterDTOValue), string(String)
+    
+    init(from decoder: Decoder) throws {
+        if let int = try? decoder.singleValueContainer().decode(GetParameterDTOValue.self) {
+            self = .parameterDto(int)
+            return
+        }
+        
+        if let string = try? decoder.singleValueContainer().decode(String.self) {
+            self = .string(string)
+            return
+        }
+        
+        throw QuantumError.missingValue
+    }
+    
+    enum QuantumError:Error {
+        case missingValue
+    }
+}
+extension QuantumValue {
+    var stringValue: String? {
+        switch self {
+        case .parameterDto(_): return nil
+        case .string(let value): return value
+        }
+    }
+    
+    var parameterValue: GetParameterDTOValue? {
+        switch self {
+        case .parameterDto(let value): return value
+        case .string(_): return nil
+        }
+    }
+}
+
+// MARK: - GetParameterDTOValue
+class GetParameterDTOValue: Codable {
+    var market: String?
+    var rule: [GetParameterDTORule]?
+
+    enum CodingKeys: String, CodingKey {
+        case market = "Market"
+        case rule = "Rule"
+    }
+
+    init(market: String?, rule: [GetParameterDTORule]?) {
+        self.market = market
+        self.rule = rule
+    }
+}
+
+// MARK: - Rule
+class GetParameterDTORule: Codable {
+    var stockType, min, max, priceStep: String?
+    var maxVol, assetCode: String?
+    var assetType: GetParameterDTOAssetType?
+    var priceUnit, volumeUnit, tradingType, minVol: String?
+    var multiplier: String?
+
+    enum CodingKeys: String, CodingKey {
+        case stockType = "StockType"
+        case min = "Min"
+        case max = "Max"
+        case priceStep = "PriceStep"
+        case maxVol = "MaxVol"
+        case assetCode = "AssetCode"
+        case assetType = "AssetType"
+        case priceUnit = "PriceUnit"
+        case volumeUnit = "VolumeUnit"
+        case tradingType = "TradingType"
+        case minVol = "MinVol"
+        case multiplier = "Multiplier"
+    }
+}
+
+enum GetParameterDTOAssetType: String, Codable {
+    case b = "B"
+    case empty = ""
+    case i = "I"
+}
+
+
+
+
 let jsonData = JSON.data(using: .utf8)!
 
-let userRes = try! JSONDecoder().decode(GetAccountsResponse.self, from: jsonData)
-let userData =  userRes.getAccountsData
-let user = userData?.accounts
+let res = try! JSONDecoder().decode(GetParametersResponse.self, from: jsonData)
+let res1 =  res.parametersData
+let res2 = res1?.parameters![0]
+let res22 = res2?.value?.stringValue
+let res3 = res1?.parameters![1]
+let res4 = res3?.value?.parameterValue
+//let res4 = res3?.rule
 
 print(formatter.string(from: date))
 
