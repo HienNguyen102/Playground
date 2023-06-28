@@ -46,7 +46,7 @@ let token = [headerBase64String, payloadBase64String, signatureBase64String].joi
 let date = Date()
 let formatter = DateFormatter()
 formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-
+/*
 let JSON = """
 {
     "Code": 1,
@@ -129,6 +129,42 @@ let JSON = """
                 "Description": "Đưa config GroupAcountAdmin BO xuống DB",
                 "Date": 20220825,
                 "IsReadonly": false
+            }
+        ]
+    }
+}
+"""
+ */
+let JSON = """
+{
+    "Code": 1,
+    "Msg": "Successful",
+    "Data": {
+        "MarketID": "1",
+        "UID": "436",
+        "Symbol": "ACB",
+        "Transactions": [
+            {
+                "I": 1687348992960867,
+                "T": "091501",
+                "R": 22200,
+                "P": 22200,
+                "Q": 16700,
+                "SB": " ",
+                "L": 0,
+                "NQ": 16700,
+                "NV": 370740000
+            },
+            {
+                "I": 1687348992962944,
+                "T": "091503",
+                "R": 22200,
+                "P": 22200,
+                "Q": 1000,
+                "SB": "S",
+                "L": 0,
+                "NQ": 17700,
+                "NV": 392940000
             }
         ]
     }
@@ -857,16 +893,83 @@ enum GetParameterDTOAssetType: String, Codable {
 
 
 
+// MARK: - GetTransactionsResponse
+class GetTransactionsResponse: BaseResponse {
+    var getTransactionData: GetTransactionsData?
+
+    override var data: BaseData? {
+        get {
+            return getTransactionData
+        }
+        
+        set {
+            if let newTransData = newValue as? GetTransactionsData {
+                getTransactionData = newTransData
+            } else {
+                print("incorrect")
+            }
+        }
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case getTransactionData = "Data"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        getTransactionData = try? container.decode(GetTransactionsData.self, forKey: .getTransactionData)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - GetTransactionsData
+class GetTransactionsData: BaseData {
+    //var marketID, uid, symbol: String?
+    var transactions: [TransactionDTO]?
+
+    enum CodingKeys: String, CodingKey {
+        /*case marketID = "MarketID"
+        case uid = "UID"
+        case symbol = "Symbol"*/
+        case transactions = "Transactions"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        transactions = try? container.decode([TransactionDTO].self, forKey: .transactions)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - TransactionDTO
+class TransactionDTO: Codable {
+    var i: Double?
+    var t: String?
+    var r, p, q: Double?
+    var sb: String?
+    var l, nq, nv: Double?
+
+    enum CodingKeys: String, CodingKey {
+        case i = "I"
+        case t = "T"
+        case r = "R"
+        case p = "P"
+        case q = "Q"
+        case sb = "SB"
+        case l = "L"
+        case nq = "NQ"
+        case nv = "NV"
+    }
+}
+
+
+
 
 let jsonData = JSON.data(using: .utf8)!
 
-let res = try! JSONDecoder().decode(GetParametersResponse.self, from: jsonData)
-let res1 =  res.parametersData
-let res2 = res1?.parameters![0]
-let res22 = res2?.value?.stringValue
-let res3 = res1?.parameters![1]
-let res4 = res3?.value?.parameterValue
-//let res4 = res3?.rule
+let res = try! JSONDecoder().decode(GetTransactionsResponse.self, from: jsonData)
+let res1 =  res.getTransactionData
+let res2 = res1?.transactions![0]
 
 print(formatter.string(from: date))
 
