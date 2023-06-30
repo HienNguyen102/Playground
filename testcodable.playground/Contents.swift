@@ -1,7 +1,7 @@
 import UIKit
 import CryptoKit
 
-extension Data {
+/*extension Data {
     func urlSafeBase64EncodedString() -> String {
         return base64EncodedString()
             .replacingOccurrences(of: "+", with: "-")
@@ -14,12 +14,10 @@ struct Header: Encodable {
     let alg = "HS256"
     let typ = "JWT"
 }
-var spaces = [Space]()
-spaces.append(Space())
 struct Payload: Encodable {
-    let sub = "1234567890"
+    //let sub = "1234567890"
     let UserName = "huyen101"
-    let Spaces = spaces
+    let Spaces = [Space()]
 }
 
 struct Space: Encodable {
@@ -41,11 +39,12 @@ let signature = HMAC<SHA256>.authenticationCode(for: toSign, using: privateKey)
 let signatureBase64String = Data(signature).urlSafeBase64EncodedString()
 
 let token = [headerBase64String, payloadBase64String, signatureBase64String].joined(separator: ".")
-//print(token)
+print(token)*/
 
 let date = Date()
 let formatter = DateFormatter()
 formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+//print(formatter.string(from: date))
 /*
 let JSON = """
 {
@@ -138,33 +137,309 @@ let JSON = """
 let JSON = """
 {
     "Code": 1,
-    "Msg": "Successful",
     "Data": {
-        "MarketID": "1",
-        "UID": "436",
-        "Symbol": "ACB",
-        "Transactions": [
+        "AccID": "999C010053",
+        "SubAccID": "1",
+        "SubAcc": {
+            "ID": "1",
+            "Status": 1,
+            "ControllerID": "Simple",
+            "Assets": [
+                {
+                    "Type": 0,
+                    "Side": "1",
+                    "Symbol": "VND",
+                    "Init": 0,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 0.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "1",
+                    "Symbol": "VND",
+                    "Init": 428843000,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 0.0
+                },
+                {
+                    "Type": 2,
+                    "Side": "1",
+                    "Symbol": "VND",
+                    "Init": 0,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 0.0
+                },
+                {
+                    "Type": 6,
+                    "Side": "1",
+                    "Symbol": "VND",
+                    "Init": 0,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 0.0
+                },
+                {
+                    "Type": 8,
+                    "Side": "1",
+                    "Symbol": "VND",
+                    "Init": 0,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 0.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "ACB",
+                    "Init": 1800,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 21900.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "SBT",
+                    "Init": 100,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 15450.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "GAS",
+                    "Init": 2000,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 94600.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "CFPT2210",
+                    "Init": 700100,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 350.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "CEO",
+                    "Init": 900,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 24900.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "AAA",
+                    "Init": 100,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 10700.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "BVS",
+                    "Init": 2500,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 23600.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "SSI",
+                    "Init": 500,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 25450.0
+                },
+                {
+                    "Type": 1,
+                    "Side": "2",
+                    "Symbol": "BID",
+                    "Init": 100,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 44500.0
+                },
+                {
+                    "Type": 4,
+                    "Side": "2",
+                    "Symbol": "BID",
+                    "Init": 100,
+                    "Added": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Substracted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "Shorted": {
+                        "P": 0,
+                        "C": 0
+                    },
+                    "MidPx": 0.0
+                }
+            ]
+        },
+        "Extension": [
             {
-                "I": 1687348992960867,
-                "T": "091501",
-                "R": 22200,
-                "P": 22200,
-                "Q": 16700,
-                "SB": " ",
-                "L": 0,
-                "NQ": 16700,
-                "NV": 370740000
+                "Key": "PPBasicTotal",
+                "Value": 428843000
             },
             {
-                "I": 1687348992962944,
-                "T": "091503",
-                "R": 22200,
-                "P": 22200,
-                "Q": 1000,
-                "SB": "S",
-                "L": 0,
-                "NQ": 17700,
-                "NV": 392940000
+                "Key": "PPBasic",
+                "Value": 428843000
             }
         ]
     }
@@ -772,7 +1047,7 @@ class GetParametersResponse: BaseResponse {
     }
 }
 
-// MARK: - DataClass
+// MARK: - GetParametersData
 class GetParametersData: BaseData {
     var parameters: [GetParameterDTO]?
 
@@ -782,18 +1057,22 @@ class GetParametersData: BaseData {
 
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        parameters = try? container.decode([GetParameterDTO].self, forKey: .parameters)
+        do {
+            parameters = try container.decode([GetParameterDTO].self, forKey: .parameters)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
         try super.init(from: decoder)
     }
 }
 
-// MARK: - Parameter
+// MARK: - GetParameterDTO
 class GetParameterDTO: Codable {
-    var id: Int?
+    var id: Double?
     var type, name: String?
     var value: QuantumValue?
     var description: String?
-    var date: Int?
+    var date: Double?
     var isReadonly: Bool?
 
     enum CodingKeys: String, CodingKey {
@@ -861,7 +1140,7 @@ class GetParameterDTOValue: Codable {
     }
 }
 
-// MARK: - Rule
+// MARK: - GetParameterDTORule
 class GetParameterDTORule: Codable {
     var stockType, min, max, priceStep: String?
     var maxVol, assetCode: String?
@@ -964,12 +1243,305 @@ class TransactionDTO: Codable {
 
 
 
+// MARK: - GetSnapshotResponse
+class GetSnapshotResponse: BaseResponse {
+    var snapshotData : GetSnapshotData?
+    override var data : BaseData? {
+        get{
+            return snapshotData
+        }
+        set {
+            if let newRacingChassis = newValue as? GetSnapshotData {
+                snapshotData = newRacingChassis
+            } else {
+                print("incorrect chassis type for racecar")
+            }
+        }
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case snapshotData = "Data"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        snapshotData = try? container.decode(GetSnapshotData.self, forKey: .snapshotData)
+        try super.init(from: decoder)
+    }
+}
+
+class GetSnapshotData: BaseData {
+    var stocks: [GetSnapshotStocksDTO]?
+    var indexes: [GetSnapshotIndexDTO]?
+    enum CodingKeys: String, CodingKey {
+        case stocks = "Stocks"
+        case indexes = "Indexes"
+    }
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        stocks = try? container.decode([GetSnapshotStocksDTO].self, forKey: .stocks)
+        indexes = try? container.decode([GetSnapshotIndexDTO].self, forKey: .indexes)
+        try super.init(from: decoder)
+    }
+}
+
+
+// MARK: - GetSnapshotStocksDTO
+class GetSnapshotStocksDTO: Codable {
+    var the0: String?
+    var the1, the2: Double?
+    var the8: String?
+    var the9: Double?
+    var st, rt: String?
+    var m, i: Double?
+    var s, tt: String?
+    var c, f, r, sh: Double?
+    var o: Double?
+    var t: String?
+    var p, q, l, e: Double?
+    var u, uv, nq, nv: Double?
+    var pq, pv, oq, ov: Double?
+    var v: Double?
+    var h, w, g, x: Double?
+    var d, k, tp: Double?
+    var b, a: [Double]?
+    
+    //var et: Et?
+
+    enum CodingKeys: String, CodingKey {
+        case the0 = "0"
+        case the1 = "1"
+        case the2 = "2"
+        case the8 = "8"
+        case the9 = "9"
+        case st = "ST"
+        case rt = "RT"
+        case m = "M"
+        case i = "I"
+        case s = "S"
+        case tt = "TT"
+        case c = "C"
+        case f = "F"
+        case r = "R"
+        case sh = "SH"
+        case o = "O"
+        case t = "T"
+        case p = "P"
+        case q = "Q"
+        case l = "L"
+        case e = "E"
+        case u = "U"
+        case uv = "UV"
+        case nq = "NQ"
+        case nv = "NV"
+        case pq = "PQ"
+        case pv = "PV"
+        case oq = "OQ"
+        case ov = "OV"
+        case v = "V"
+        case h = "H"
+        case w = "W"
+        case g = "G"
+        case x = "X"
+        case d = "D"
+        case k = "K"
+        case tp = "TP"
+        case b = "B"
+        case a = "A"
+        //case et = "ET"
+    }
+}
+
+// MARK: - Et
+/*class Et: Codable {
+    var st: String?
+
+    enum CodingKeys: String, CodingKey {
+        case st = "ST"
+    }
+
+    init(st: String?) {
+        self.st = st
+    }
+}*/
+
+class GetSnapshotIndexDTO: Codable {
+    var the0: String?
+    var the1, the2, the3, the4: Double?
+    var the5, the6, the7: Double?
+    var the8: String?
+    var the9, i: Double?
+    var s: String?
+    var m: Double?
+    var st, z: String?
+    var r, o: Double?
+    var t: String?
+    var p, q, l: Double?
+    var e: Double?
+    var u, uv, nq, nv: Double?
+    var pq, pv, oq, ov: Double?
+    var h, w, tt, nc: Double?
+    var nf, uq: Double?
+
+    enum CodingKeys: String, CodingKey {
+        case the0 = "0"
+        case the1 = "1"
+        case the2 = "2"
+        case the3 = "3"
+        case the4 = "4"
+        case the5 = "5"
+        case the6 = "6"
+        case the7 = "7"
+        case the8 = "8"
+        case the9 = "9"
+        case i = "I"
+        case s = "S"
+        case m = "M"
+        case st = "ST"
+        case z = "Z"
+        case r = "R"
+        case o = "O"
+        case t = "T"
+        case p = "P"
+        case q = "Q"
+        case l = "L"
+        case e = "E"
+        case u = "U"
+        case uv = "UV"
+        case nq = "NQ"
+        case nv = "NV"
+        case pq = "PQ"
+        case pv = "PV"
+        case oq = "OQ"
+        case ov = "OV"
+        case h = "H"
+        case w = "W"
+        case tt = "TT"
+        case nc = "NC"
+        case nf = "NF"
+        case uq = "UQ"
+    }
+}
+
+
+
+
+// MARK: - GetSubAccInfoResponse
+class GetSubAccInfoResponse: BaseResponse {
+    var subData: GetSubAccInfoData?
+    
+    override var data: BaseData? {
+        get {
+            return subData
+        }
+        set {
+            if let newSubData = newValue as? GetSubAccInfoData{
+                subData = newSubData
+            } else {
+                print("incorrect")
+            }
+        }
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case subData = "Data"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        subData = try? container.decode(GetSubAccInfoData.self, forKey: .subData)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - GetSubAccInfoData
+class GetSubAccInfoData: BaseData {
+    var accID, subAccID: String?
+    var subAcc: SubAccDTO?
+    var dataExtension: [SubAccInfoExtension]?
+
+    enum CodingKeys: String, CodingKey {
+        case accID = "AccID"
+        case subAccID = "SubAccID"
+        case subAcc = "SubAcc"
+        case dataExtension = "Extension"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        accID = try? container.decode(String.self, forKey: .accID)
+        subAccID = try? container.decode(String.self, forKey: .subAccID)
+        subAcc = try? container.decode(SubAccDTO.self, forKey: .subAcc)
+        dataExtension = try? container.decode([SubAccInfoExtension].self, forKey: .subAcc)
+        try super.init(from: decoder)
+    }
+}
+
+// MARK: - SubAccInfoExtension
+class SubAccInfoExtension: Codable {
+    var key: String?
+    var value: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case key = "Key"
+        case value = "Value"
+    }
+}
+
+// MARK: - SubAcc
+class SubAccDTO: Codable {
+    var id: String?
+    var status: Int?
+    var controllerID: String?
+    var assets: [SubAccAssetDTO]?
+
+    enum CodingKeys: String, CodingKey {
+        case id = "ID"
+        case status = "Status"
+        case controllerID = "ControllerID"
+        case assets = "Assets"
+    }
+}
+
+// MARK: - Asset
+class SubAccAssetDTO: Codable {
+    var type: Int?
+    var side, symbol: String?
+    var assetInit: Int?
+    var added, substracted, shorted: SubAccAssetAdded?
+    var midPx: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case type = "Type"
+        case side = "Side"
+        case symbol = "Symbol"
+        case assetInit = "Init"
+        case added = "Added"
+        case substracted = "Substracted"
+        case shorted = "Shorted"
+        case midPx = "MidPx"
+    }
+}
+
+// MARK: - Added
+class SubAccAssetAdded: Codable {
+    var p, c: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case p = "P"
+        case c = "C"
+    }
+}
+
+
+
 
 let jsonData = JSON.data(using: .utf8)!
 
-let res = try! JSONDecoder().decode(GetTransactionsResponse.self, from: jsonData)
-let res1 =  res.getTransactionData
-let res2 = res1?.transactions![0]
+let res = try! JSONDecoder().decode(GetSubAccInfoResponse.self, from: jsonData)
+let res1 =  res.subData
+let res2 = res1?.subAcc
+let res3 = res2?.assets
 
 print(formatter.string(from: date))
 
